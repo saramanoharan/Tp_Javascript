@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercice 1 en JS</title>
+</head>
+<body>
+<script type="text/javascript">
+	var note1 = Number(prompt("Donner une première note"));
+	var note2 = Number(prompt("Donner une deuxième note"));
+	var note3 = Number(prompt("Donner une troisième note"));
+
+	var somme = note1*2+note2*2+note3*3;
+
+	var moyenne = somme / 7;
+
+if (moyenne>=10)
+		document.write("Vous êtes admis");
+else
+		document.write("Vous êtes redoublant");
+<!-- Utiliser "doc write" à la place de alert pour afficher le" if" et "else" dans la page -->
+
+
+	document.write("<table border =2>")
+	document.write("<td> Voilà la somme : " + somme +"<br></td>");
+	document.write("<td> Voilà la moyenne : " + moyenne + "</td>");
+	document.write("</table>")
+
+	
+</script>
+</body>
+</html>
+
+

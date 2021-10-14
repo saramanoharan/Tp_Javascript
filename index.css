@@ -1,0 +1,26 @@
+nav ul{
+	list-style-type: none;
+	font-family: verdana;
+	margin: 0px;
+	padding: 0px;
+
+}
+nav li {
+	float: center;
+	width: 100px;
+	height: 40px;
+	border: 2px solid #082371;
+	text-align: center;
+	line-height: 40px;
+		margin: 10px;
+
+}
+nav li a{
+	display: ruby;
+	text-decoration: none;
+	background-color: #082371	;
+	color: white;
+}
+nav li :hover{
+	background-color: whitesmoke;
+}
