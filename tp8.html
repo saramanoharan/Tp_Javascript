@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+<script type="text/javascript">
+	function calculate(){
+     		var note1= parseInt(document.getElementById("prixl").value);
+			var note2= parseInt(document.getElementById("prix2").value);
+			var note3= parseInt(document.getElementById("prix3").value);
+
+			var note11= parseInt(document.getElementById("q1").value);
+			var note22= parseInt(document.getElementById("q2").value);
+			var note33= parseInt(document.getElementById("q3").value);
+
+			document.getElementById("t1").value=(note1*note11);
+			document.getElementById("t2").value=(note2*note22);
+			document.getElementById("t3").value=(note3*note33);
+
+			document.getElementById("total").value=(note1*note11+note2*note22+note3*note33 + "$");
+		}
+</script>
+
+</head>
+<body>
+<form>
+	<table>
+		<tr>
+			<td> Produit </td>
+			<td> Prix </td>
+			<td> Quantité </td>
+			<td> Total </td>
+		</tr>
+
+		<tr>
+			<td> <input id="p1"type="text" name="p1"></td>
+			<td> <input id="prix1"type="text" name="prix1"></td>
+			<td><input id="q1"type="text" name="q1"></td>
+			<td><input id="t1"type="text" name="t1"></td>
+		</tr>
+
+		<tr>
+			<td><input id="p2"type="text" name="p2"></td>
+			<td><input id="prix2"type="text" name="prix2"></td>
+			<td><input id="q2"type="text" name="q2"></td>
+			<td><input id="t2"type="text" name="t2"></td>
+		</tr>
+
+
+		<tr>
+			<td><input id="p3" type="text" name="p3"></td>
+			<td><input id="prix3"type="text" name="prix3"></td>
+			<td><input id="q3" type="text" name="q3"></td>
+			<td><input id="t3" type="text" name="t3"></td>
+		</tr>
+
+
+		<tr>	
+			<td><input id="p4" type="text" name="p4"></td>
+			<td><input id="prix4" type="text" name="prix4"></td>
+			<td><input id="q4" type="text" name="q4"></td>
+			<td><input id="t4" type="text" name="t4"></td>
+		</tr>
+	</table>
+
+<input onClick="calculate()" type="button" value="Addition">
+<input id="total" type="text" name="total">
+</form>
+
+
+</body>
+</html>

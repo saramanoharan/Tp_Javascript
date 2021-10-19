@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exercice 6</title>
+</head>
+<body>
+<script language="javascript">
+	var mot = prompt("Saisir un mot : ");
+	var lg=mot.length;
+
+		document.write("<br><b>Le mot saisie est : "+ mot+"</b>");
+		document.writeln("<br>La première lettre du mot <strong><span style='color:blue;'>"+ mot +"</span> </strong> est "+ mot.substr(0, 1) + " et il se compose de " + lg + " caractères ");
+	var lastChar = mot.substr(-1);
+	document.writeln("<br>La dernière lettre mot <strong><span style='color:blue;'>"+mot+"</span></strong> est : "+ lastChar);
+</script>
+
+
+
+
+</body>
+</html>
