@@ -1,4 +1,8 @@
-theme: jekyll-theme-hacker
+h2{
+	color: white;
+}
+
+
 nav ul{
 	list-style-type: none;
 	font-family: verdana;
@@ -6,10 +10,13 @@ nav ul{
 	padding: 0px;
 
 }
+
+
+
 nav li {
-	float: center;
-	width: 100px;
-	height: 40px;
+	float: right;
+	width: auto;
+	height: auto;
 	border: 2px solid #082371;
 	text-align: center;
 	line-height: 40px;
@@ -20,8 +27,169 @@ nav li a{
 	display: ruby;
 	text-decoration: none;
 	background-color: #082371	;
-	color: white;
+	color:#082371;
 }
 nav li :hover{
-	background-color: whitesmoke;
+	background-color: #082371;
 }
+
+body
+{
+	font-family: Verdana, Calibri, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	background-image: url('data.gif');
+	background-size: cover;
+}
+/*                   */
+
+nav>ul 
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+nav li
+{
+	list-style-type: none;
+}
+
+nav>ul>li 
+{
+	float: left;
+}
+.submenu
+{
+	display: none;
+}
+
+nav input[type=checkbox]
+{
+	display: none;
+}
+
+.menu-mobile
+{
+	display: none;
+}
+nav
+{
+	width: 100%;
+	background-color: #082371;
+}
+
+nav > ul > li
+{
+	float: left;
+	position: relative;
+}
+
+nav>ul::after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+nav a 
+{
+	display: inline-block;
+	text-decoration: none;
+}
+nav>ul>li>a 
+{
+	padding: 20px 30px;
+	color: black;
+}
+nav li:hover .submenu
+{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 100000;
+}
+.submenu li
+{
+	border-bottom: 1px solid #CCC;
+}
+.submenu li a 
+{
+	padding: 15px 30px;
+	font-size: 13px;
+	color: #222538;
+	width: 270px;
+}
+.menu-js:hover
+{
+	border-top: 5px solid #0070BB;
+	background-color: RGBa(228, 77, 38, 0.15);
+}
+.menu-exo:hover
+{
+	border-top: 5px solid #0070bb;
+	background-color: RGBa(000, 112, 192, 0.15);
+}
+
+nav > ul > li:hover a
+{
+	padding: 15px 30px 20px 30px;
+}
+.menu-js .submenu
+{
+	background-color: RGB(000, 160, 240);
+}
+.menu-exo .submenu
+{
+	background-color: RGB(000, 160, 240);
+}
+
+.submenu li:hover a
+{
+	color: white;
+	font-weight: bold;
+}
+.menu-js .submenu li:hover
+{
+	background-color: RGB(000, 115, 200);
+}
+.menu-exo .submenu li:hover
+{
+	background-color: RGB(000, 115, 200);
+}
+
+nav input[type=checkbox]
+{
+	display: none;
+}
+
+nav input[type=checkbox]:checked ~ ul
+{
+	display: block;
+}
+@media screen and (max-width: 680px)
+{
+	.menu-mobile{
+		display: block;
+		color: white;
+		background-color: RGBA(0, 0, 0, 0);
+		text-align: center;
+		padding: 12px 0;
+	}
+	nav ul{
+		display: none;
+	}
+}
+	nav ul li, nav ul li a{
+		width: 100%;
+		text-align: center;
+	}
+	nav ul li a, nav ul li:hover a{
+		padding: 10px 0px 10px 0px;
+	}
+	nav li:hover .submenu{
+		display: block;
+		position: static;
+	}
+}
+
